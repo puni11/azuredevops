@@ -25,7 +25,7 @@ export default function CareerStats() {
           {/* Left Column: Headings */}
           <div className="max-w-2xl">
             <span className="uppercase tracking-[0.15em] text-xs font-semibold text-white/80 mb-4 block">
-              One-Month Fast Track Training Program
+             60 Hours Fast Track Training Program
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold leading-[1.15] tracking-tight">
               Master Azure Administrator (AZ-104) 
@@ -70,14 +70,16 @@ export default function CareerStats() {
 
           {/* Stat Box 3 */}
           <div className="flex flex-col p-8 lg:p-10 min-h-[280px]">
-            <h4 className="text-5xl lg:text-6xl font-light mb-6">4</h4>
-            <p className="text-sm text-gray-700 leading-relaxed mb-8 flex-grow">
-              Weeks of comprehensive roadmap spanning Azure Fundamentals, Networking, Storage, Databases, Security, and Azure DevOps.
-            </p>
-            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-auto">
-              BEGINNER TO ADVANCED LEVEL
-            </p>
-          </div>
+  <h4 className="text-5xl lg:text-6xl font-light mb-6">35%</h4>
+
+  <p className="text-sm text-gray-700 leading-relaxed mb-8 flex-grow">
+    Annual growth in Azure and Cloud Engineering roles worldwide as organizations accelerate cloud adoption and DevOps transformation.
+  </p>
+
+  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-auto">
+    HIGH DEMAND CAREER PATH
+  </p>
+</div>
 
           {/* Stat Box 4 */}
           <div className="flex flex-col p-8 lg:p-10 min-h-[280px]">

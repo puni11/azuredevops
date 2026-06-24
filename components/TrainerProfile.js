@@ -105,21 +105,21 @@ export default function TrainerProfile() {
                 <p className="text-sm font-bold text-gray-900">Active Certifications</p>
                 <div className="flex flex-wrap gap-2 mt-2">
   {[
+      "AZ-104",
+    "AZ-400",
+    "AZ-305",
     "RHCSA",
     "Red Hat Containers Specialist",
     "Red Hat Automation Platform Specialist",
     "AWS Solutions Architect Associate",
-    "AZ-104",
-    "AZ-400",
-    "AZ-305",
     "Red Hat Enterprise Linux Diagnostics & Troubleshooting",
     "LFS101 - Introduction to Linux",
   ].map((cert) => (
     <span
       key={cert}
-      className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200"
+      className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-xs border border-gray-200"
     >
-      <CheckCircle2 size={12} className="text-green-600" />
+      <CheckCircle2 size={12} className="text-gray-600" />
       {cert}
     </span>
   ))}

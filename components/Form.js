@@ -192,7 +192,7 @@ export default function Form(){
 
   <span className="relative z-10 flex items-center gap-2">
     <SquareArrowOutUpRightIcon size={16} duration={1} color="#111" />
-    {loading ? "Submitting..." : "Claim My Seat — June 2026"}
+    {loading ? "Submitting..." : "Claim My Seat — August 2026"}
   </span>
 </button>
                 </form>

@@ -10,7 +10,7 @@ export default function FAQSection() {
       questions: [
         {
           q: 'What is the duration of the fast track program?',
-          a: 'The program is an intensive 1-Month (30 Days) fast track course. It includes 2 hours of daily sessions, totaling 60 hours of training.'
+          a: 'The program is an intensive 60 hours fast track course. It includes 2 hours of daily sessions, totaling 60 hours of training.'
         },
         {
           q: 'Is the training online or in a classroom?',
@@ -81,7 +81,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 sm:px-0 py-16 md:py-24 font-sans bg-white">
+    <section className="w-full max-w-7xl mx-auto px-6 sm:px-0 py-16 md:py-24 bg-white">
       
       {/* Header section */}
       <div className="mb-12">

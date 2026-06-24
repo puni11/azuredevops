@@ -50,16 +50,6 @@ export default function PricingAndBatch() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-gray-50 text-gray-600 rounded-sm flex items-center justify-center shrink-0">
-                  <Clock size={24} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">Timings (Weekend Batch)</h4>
-                  <p className="text-gray-600">Sat & Sun: 9:00 AM - 1:00 PM (IST)</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gray-50 text-gray-600 rounded-sm flex items-center justify-center shrink-0">
                   <Video size={24} />
                 </div>
                 <div>

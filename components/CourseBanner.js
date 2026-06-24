@@ -28,7 +28,7 @@ export default function CourseBanner() {
           </div>
           <div className="flex flex-col">
             <span className="text-[13px] text-gray-50 mb-1">Duration</span>
-            <span className="text-base font-semibold text-gray-50">1 Month</span>
+            <span className="text-base font-semibold text-gray-50">60 Hours</span>
           </div>
         </div>
 
