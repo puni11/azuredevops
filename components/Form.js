@@ -52,7 +52,7 @@ export default function Form(){
       body: JSON.stringify({
         name: form.name,
         email: form.email,
-        mobile: form.mobile,
+        phone: form.mobile,
         level: form.level,
         courseName: "Azure + Azure DevOps",
       }),
