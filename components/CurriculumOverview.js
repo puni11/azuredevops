@@ -41,7 +41,7 @@ export default function CurriculumOverview() {
       title: " 4: Azure DevOps — Boards, Repos, Pipelines, Artifacts",
       topics: [
         "DevOps Fundamentals, Agile and Scrum methodologies.",
-        "Git and GitHub, Azure Repos, Branching Strategies, and Pull Requests."
+        " Azure Repos, Branching Strategies, and Pull Requests."
       ]
     },
     {
@@ -49,7 +49,7 @@ export default function CurriculumOverview() {
       topics: [
         "CI/CD Concepts, Azure Pipelines, YAML Pipelines, and Build Agents.",
         "Continuous Integration and Continuous Delivery, Release Pipelines, and Deployment Strategies.",
-        "Docker Fundamentals, Dockerfile, Docker Compose, and Azure Container Registry (ACR).",
+        "Azure Container Registry (ACR).",
         "Azure Kubernetes Service (AKS), Deployments, Services, and Helm Charts."
       ]
     },
@@ -66,7 +66,7 @@ export default function CurriculumOverview() {
       title: " 7: Capstone Project + Certification Prep",
       topics: [
         "AZ-104 Practical Labs, Mock Test, and AZ-104 Real-Time Project covering High Availability Architecture, Backup, and Monitoring Implementation.",
-        "End-to-End DevOps Project covering GitHub Repository, Azure Repos, Azure Pipelines, Terraform Infrastructure Provisioning, Docker Image Creation, Azure Container Registry, and AKS Deployment.",
+        "End-to-End DevOps Project covering Azure Repos, Azure Pipelines, Terraform Infrastructure Provisioning, Azure Container Registry, and AKS Deployment.",
         "Complete CI/CD Pipeline integration using Azure Monitor and Log Analytics.",
         "Certification coverage: Microsoft Certified: Azure Administrator Associate (AZ-104) and Microsoft Certified: DevOps Engineer Expert (AZ-400)."
       ]
@@ -122,12 +122,12 @@ export default function CurriculumOverview() {
   };
 
   return (
-    <section id='curriculum' className=" py-20 font-sans border-t border-slate-200 font-lexend">
+    <section id='curriculum' className=" py-20 border-t border-slate-200 font-lexend">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Header Area */}
         <div className="text-left sm:text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-6 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight mb-6 max-w-3xl mx-auto">
             A Curriculum Built Around Real 
               Deployment Work, Not Just Theory
           </h2>

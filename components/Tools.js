@@ -4,13 +4,10 @@ const CDN = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons';
 
 const toolsList = [
   { name: "Microsoft Azure",     icon: `${CDN}/azure/azure-original.svg` },
-  { name: "GitHub",              icon: `${CDN}/github/github-original.svg` },
   { name: "Azure Pipelines",     icon: `${CDN}/azuredevops/azuredevops-original.svg` },
   { name: "Terraform",           icon: `${CDN}/terraform/terraform-original.svg` },
-  { name: "Docker",              icon: `${CDN}/docker/docker-original.svg` },
   { name: "Kubernetes (AKS)",    icon: `${CDN}/kubernetes/kubernetes-plain.svg` },
   { name: "Azure Monitor",       icon: `${CDN}/azure/azure-original.svg` },
-  { name: "Bicep",               icon: `${CDN}/azure/azure-original.svg` },
 ];
 
 // Bicep and Azure Monitor don't have dedicated devicons — they share Azure branding.

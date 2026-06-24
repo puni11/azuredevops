@@ -6,7 +6,16 @@ import {
   Terminal,  
   CheckCircle2 
 } from 'lucide-react';
-
+const LinkedInIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+    className="w-4 h-4"
+    fill="currentColor"
+  >
+    <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.3 107 0 82.7 0 53.8A53.79 53.79 0 0 1 53.84 0c29.54 0 53.84 24.3 53.84 53.8 0 28.9-24.3 53.2-53.84 53.2zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.7-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+  </svg>
+);
 export default function TrainerProfile() {
   return (
     <section id='instructor' className="bg-gradient-to-b from-sky-50/80 via-white to-white border-b-1 border-gray-200 px-6 py-20 text-gray-900">
@@ -51,17 +60,17 @@ export default function TrainerProfile() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-1">Mr. Kunal Parihar</h3>
-              <p className="text-md text-blue-800 font-medium">Senior Cloud Trainer</p>
+              <p className="text-sm text-blue-800 font-medium">Cloud Infrastructure Engineer | Terraform Automation Expert | CI/CD Pipeline Architect </p>
             </div>
             
             <a 
-              href="https://linkedin.com/in/yourtrainer" 
+              href="https://www.linkedin.com/in/kunal-singh-35975923a/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white text-sm font-semibold rounded-sm hover:bg-[#004182] transition-colors w-fit"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#0A66C2] text-white text-xs font-semibold rounded-sm hover:bg-[#004182] transition-colors w-40"
             >
-              {/* <Linkedin size={18} /> */}
-              View Profile
+             <LinkedInIcon />
+              See Profile
             </a>
           </div>
 
@@ -73,7 +82,7 @@ export default function TrainerProfile() {
                 <Briefcase size={20} />
               </div>
               <div>
-                <p className="text-sm font-bold text-gray-900">12+ Years Experience</p>
+                <p className="text-sm font-bold text-gray-900">8+ Years Experience</p>
                 <p className="text-sm text-gray-600">Enterprise Azure & DevOps Infra</p>
               </div>
             </div>
@@ -95,19 +104,26 @@ export default function TrainerProfile() {
               <div>
                 <p className="text-sm font-bold text-gray-900">Active Certifications</p>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  <span className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200">
-                    <CheckCircle2 size={12} className="text-gray-600" /> AZ-104
-                  </span>
-                  <span className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200">
-                    <CheckCircle2 size={12} className="text-gray-600" /> AZ-400
-                  </span>
-                  <span className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200">
-                    <CheckCircle2 size={12} className="text-gray-600" /> AZ-305
-                  </span>
-                  <span className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200">
-                    <CheckCircle2 size={12} className="text-gray-600" /> CKA
-                  </span>
-                </div>
+  {[
+    "RHCSA",
+    "Red Hat Containers Specialist",
+    "Red Hat Automation Platform Specialist",
+    "AWS Solutions Architect Associate",
+    "AZ-104",
+    "AZ-400",
+    "AZ-305",
+    "Red Hat Enterprise Linux Diagnostics & Troubleshooting",
+    "LFS101 - Introduction to Linux",
+  ].map((cert) => (
+    <span
+      key={cert}
+      className="flex items-center gap-1 text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md border border-gray-200"
+    >
+      <CheckCircle2 size={12} className="text-green-600" />
+      {cert}
+    </span>
+  ))}
+</div>
               </div>
             </div>
 

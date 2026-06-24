@@ -176,7 +176,7 @@ export default function Form(){
                       />
                       <span style={{ color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.5 }}>
                         I agree to be contacted by the admissions team and accept the{' '}
-                        <a href="#" style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: 600 }}>Terms & Privacy Policy</a>.
+                        <a href="https://grras.com/privacy-policy/" target="_blank" style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: 600 }}>Terms & Privacy Policy</a>.
                       </span>
                     </label>
                     {errors.agree && <span style={{ ...errorStyle, marginTop: '6px', display: 'block' }}>{errors.agree}</span>}

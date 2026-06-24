@@ -8,6 +8,7 @@ import CTA from "@/components/CTA";
 import CurriculumOverview from "@/components/CurriculumOverview";
 import FAQSection from "@/components/FAQSection";
 import HeroComponent from "@/components/Hero";
+import HiringPartners from "@/components/HiringPartners";
 import PersonaSection from "@/components/PersonaSection";
 import PowerSkillsSection from "@/components/PowerSkillsSection";
 import PricingAndBatch from "@/components/PricingAndBatch";
@@ -28,7 +29,7 @@ export default function Home() {
     <PersonaSection/>
     <WhyAzureNow/>
     <CurriculumOverview/>
-   
+   <HiringPartners/>
     <CTA/>
     <Certifications/>
      <CourseFeatures/>

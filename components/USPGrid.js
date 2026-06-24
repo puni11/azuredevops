@@ -33,7 +33,7 @@ export default function USPGrid() {
         style={{
             background: `
               linear-gradient(to bottom right, #0078d4 50%, #ffff 100%),
-              url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 1200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10.0' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='120%25' filter='url(%23noiseFilter)' opacity='0.45'/%3E%3C/svg%3E")
+              url("data:image/svg+xml,%3Csvg viewBox='0 0 1600 4000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10.0' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='120%25' filter='url(%23noiseFilter)' opacity='0.45'/%3E%3C/svg%3E")
             `,
             backgroundBlendMode: 'soft-light',
             backgroundSize: 'cover',
@@ -56,45 +56,102 @@ export default function USPGrid() {
           </div>
         </div>
 
-        {/* Card 2: Curriculum Aligned */}
-        <div className="bg-white rounded-sm p-8 border border-gray-100 shadow-lg shadow-gray-200/40 flex flex-col justify-between group hover:border-blue-200 transition-colors">
-          <div className="w-12 h-12 bg-gray-50 rounded-xs flex items-center justify-center text-gray-600 mb-6 group-hover:scale-110 transition-transform">
-            <CloudCheck size={24} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Exam-Aligned Curriculum</h3>
-            <p className="text-gray-800 text-sm leading-relaxed">
-              Syllabus meticulously mapped to official <strong className="text-gray-800">AZ-104</strong> and <strong className="text-gray-800">AZ-400</strong> exam objectives.
-            </p>
-          </div>
-        </div>
+  
+  <div className="relative h-80 overflow-hidden rounded-sm shadow-lg group cursor-pointer">
 
-        {/* Card 3: Small Batch Sizes */}
-        <div className="bg-white rounded-sm p-8 border border-gray-100 shadow-lg shadow-gray-200/40 flex flex-col justify-between group hover:border-blue-200 transition-colors">
-          <div className="w-12 h-12 bg-gray-50 rounded-xs flex items-center justify-center text-gray-600 mb-6 group-hover:scale-110 transition-transform">
-            <Users size={24} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">1:1 Mentor Support</h3>
-            <p className="text-gray-800 text-sm leading-relaxed">
-              Small batch sizes guarantee personalized attention, unblocking you faster during complex deployments.
-            </p>
-          </div>
-        </div>
+    <div
+      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80')",
+      }}
+    />
 
-        {/* Card 4: Resume & Interview */}
-        <div className="bg-white rounded-sm p-8 border border-gray-100 shadow-lg shadow-gray-200/40 flex flex-col justify-between group hover:border-blue-200 transition-colors">
-          <div className="w-12 h-12 bg-gray-50 rounded-xs flex items-center justify-center text-gray-600 mb-6 group-hover:scale-110 transition-transform">
-            <Briefcase size={24} />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Career & Interview Prep</h3>
-            <p className="text-gray-800 text-sm leading-relaxed">
-              Dedicated resume-building sessions, profile optimization, and technical mock interviews.
-            </p>
-          </div>
-        </div>
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 via-40% to-transparent" />
 
+    <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+
+      <div className="w-12 h-12 mb-4 rounded-md bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white">
+        <CloudCheck size={24} />
+      </div>
+
+      <h3 className="text-xl font-semibold text-white mb-2">
+        Exam-Aligned Curriculum
+      </h3>
+
+      <p className="text-sm text-gray-200 leading-relaxed">
+        Syllabus meticulously mapped to official
+        <span className="font-semibold text-white"> AZ-104</span> and
+        <span className="font-semibold text-white"> AZ-400</span> exam
+        objectives.
+      </p>
+
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="relative h-80 overflow-hidden rounded-sm shadow-lg group cursor-pointer">
+
+    <div
+      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80')",
+      }}
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 via-40% to-transparent" />
+
+    <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+
+      <div className="w-12 h-12 mb-4 rounded-md bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white">
+        <Users size={24} />
+      </div>
+
+      <h3 className="text-xl font-semibold text-white mb-2">
+        1:1 Mentor Support
+      </h3>
+
+      <p className="text-sm text-gray-200 leading-relaxed">
+        Small batch sizes guarantee personalized attention,
+        helping you overcome challenges faster during real-world
+        cloud and DevOps deployments.
+      </p>
+
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div className="relative h-80 overflow-hidden rounded-sm shadow-lg group cursor-pointer">
+
+    <div
+      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80')",
+      }}
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 via-40% to-transparent" />
+
+    <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+
+      <div className="w-12 h-12 mb-4 rounded-md bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white">
+        <Briefcase size={24} />
+      </div>
+
+      <h3 className="text-xl font-semibold text-white mb-2">
+        Career & Interview Prep
+      </h3>
+
+      <p className="text-sm text-gray-200 leading-relaxed">
+        Dedicated resume-building sessions, LinkedIn optimization,
+        job assistance, and technical mock interviews to boost
+        placement success.
+      </p>
+
+    </div>
+  </div>
         {/* Card 5: Lifetime Access */}
       <div className="relative overflow-hidden rounded-sm p-8 border border-gray-100 shadow-lg shadow-gray-200/40 flex flex-col h-[320px] group hover:border-blue-200 transition-colors">
 

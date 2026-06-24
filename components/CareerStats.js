@@ -83,7 +83,7 @@ export default function CareerStats() {
           <div className="flex flex-col p-8 lg:p-10 min-h-[280px]">
             <h4 className="text-5xl lg:text-6xl font-light mb-6">1</h4>
             <p className="text-sm text-gray-700 leading-relaxed mb-8 flex-grow">
-              Complete End-to-End DevOps Project utilizing GitHub, Azure Repos, Pipelines, Terraform, Docker, and AKS.
+              Complete End-to-End DevOps Project utilizing, Azure Repos, Pipelines, Terraform, and AKS.
             </p>
             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-auto">
               REAL-WORLD HANDS-ON PROJECTS

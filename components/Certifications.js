@@ -68,7 +68,6 @@ export default function Certifications() {
             {/* Tags */}
             <div className="flex flex-wrap gap-2">
               <span className="text-[10px] uppercase tracking-wider font-semibold border border-gray-200 px-3 py-1 text-gray-700">CI/CD</span>
-              <span className="text-[10px] uppercase tracking-wider font-semibold border border-gray-200 px-3 py-1 text-gray-700">Git</span>
               <span className="text-[10px] uppercase tracking-wider font-semibold border border-gray-200 px-3 py-1 text-gray-700">Agile</span>
               <span className="text-[10px] uppercase tracking-wider font-semibold border border-gray-200 px-3 py-1 text-gray-700">IaC</span>
             </div>

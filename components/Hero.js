@@ -43,7 +43,7 @@ export const HeroComponent = () => {
           {/* Top Label */}
           <div>
           <span className="inline-block text-sm font-semibold uppercase tracking-normal mb-4 opacity-80 animate-roll mt-8">
-            {"< "} Microsoft Certified Curriculum {" >"}
+           Microsoft Certified Curriculum
           </span>
 
           {/* Main Headline */}
