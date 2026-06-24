@@ -55,6 +55,7 @@ export default function Form(){
         phone: form.mobile,
         level: form.level,
         courseName: "Azure + Azure DevOps",
+        consent:form.agree
       }),
     });
 
