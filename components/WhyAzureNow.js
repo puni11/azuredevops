@@ -136,7 +136,7 @@ export default function AzureCareerPaths() {
           </h2>
           <p className="text-slate-800 max-w-4xl">
             Master Cloud Infrastructure with the industry's most comprehensive Azure Program.
-            Become a production-ready engineer in 6 months through hands-on Azure DevOps, AKS, Terraform, and CI/CD pipelines.
+            Become a production-ready engineer through hands-on Azure DevOps, AKS, Terraform, and CI/CD pipelines.
             Build 10+ real deployments, earn industry certifications, and prepare for top cloud interviews with expert-led guidance.
           </p>
           <a href='https://rzp.io/rzp/sM9Ufce' className="group mt-6 relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3 text-sm md:text-base font-normal text-gray-50 rounded-sm cursor-pointer bg-gradient-to-b from-sky-400 to-sky-600 shadow-lg">
