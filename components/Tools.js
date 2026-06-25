@@ -12,7 +12,7 @@ const toolsList = [
 
 // Bicep and Azure Monitor don't have dedicated devicons — they share Azure branding.
 // We'll style them with a tinted badge to differentiate.
-const badgeTools = ["Azure Monitor", "Bicep"];
+const badgeTools = ["Azure Monitor"];
 
 const ToolItem = ({ tool }) => (
   <div className="flex items-center gap-3 whitespace-nowrap px-4">

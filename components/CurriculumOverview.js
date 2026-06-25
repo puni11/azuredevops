@@ -50,7 +50,7 @@ export default function CurriculumOverview() {
         "CI/CD Concepts, Azure Pipelines, YAML Pipelines, and Build Agents.",
         "Continuous Integration and Continuous Delivery, Release Pipelines, and Deployment Strategies.",
         "Azure Container Registry (ACR).",
-        "Azure Kubernetes Service (AKS), Deployments, Services, and Helm Charts."
+        "Azure Kubernetes Service (AKS), Deployments, Services."
       ]
     },
     {
