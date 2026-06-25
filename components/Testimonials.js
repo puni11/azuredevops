@@ -22,7 +22,7 @@ export default function Testimonials() {
       beforeRole: "QA Tester",
       afterRole: "DevOps Engineer",
       quote: "Moving from manual testing to automated CI/CD pipelines felt impossible. The instructor's focus on AZ-400 real-world projects helped me build actual pipelines for my portfolio. I just landed a dedicated DevOps role.",
-      image: "https://ui-avatars.com/api/?name=Moulika+Jangra&background=0D8ABC&color=fff&size=128"
+      image: "/mou.jpeg"
     },
     {
       name: "Yashraj Monani",
