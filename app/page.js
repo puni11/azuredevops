@@ -12,6 +12,7 @@ import HiringPartners from "@/components/HiringPartners";
 import PersonaSection from "@/components/PersonaSection";
 import PowerSkillsSection from "@/components/PowerSkillsSection";
 import PricingAndBatch from "@/components/PricingAndBatch";
+import ProjectsSection from "@/components/ProjectSection";
 import Testimonials from "@/components/Testimonials";
 import { ToolsSection } from "@/components/Tools";
 import TrainerProfile from "@/components/TrainerProfile";
@@ -29,9 +30,11 @@ export default function Home() {
     <PersonaSection/>
     <WhyAzureNow/>
     <CurriculumOverview/>
+    <ProjectsSection/>
    <HiringPartners/>
     <CTA/>
     <Certifications/>
+    
      <CourseFeatures/>
     <CareerStats/>
     <PricingAndBatch />
