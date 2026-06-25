@@ -41,10 +41,27 @@ export default function Form(){
     return;
   }
 
+  // Get URL params
+  const params = new URLSearchParams(window.location.search);
+
+  const tracking = {
+    source: params.get("utm_source") || "",
+    medium: params.get("utm_medium") || "",
+    campaign: params.get("utm_campaign") || "",
+    term: params.get("utm_term") || "",
+    content: params.get("utm_content") || "",
+    gclid: params.get("gclid") || "",
+    fbclid: params.get("fbclid") || "",
+    landing_page: window.location.href,
+    page_path: window.location.pathname,
+    referrer: document.referrer || "Direct",
+    user_agent: navigator.userAgent,
+  };
+
   try {
     setLoading(true);
 
-    const response = await fetch("https://salescrm-xi.vercel.app/api/contact", {
+    const response = await fetch("http://localhost:3000/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,8 +71,11 @@ export default function Form(){
         email: form.email,
         phone: form.mobile,
         level: form.level,
-        courseName: "Azure + Azure DevOps",
-        consent:form.agree
+        course: "Azure + Azure DevOps",
+        consent: form.agree,
+
+        // Tracking
+        ...tracking,
       }),
     });
 
