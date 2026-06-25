@@ -83,7 +83,7 @@ export default function CareerStats() {
 
           {/* Stat Box 4 */}
           <div className="flex flex-col p-8 lg:p-10 min-h-[280px]">
-            <h4 className="text-5xl lg:text-6xl font-light mb-6">1</h4>
+            <h4 className="text-5xl lg:text-6xl font-light mb-6">8</h4>
             <p className="text-sm text-gray-700 leading-relaxed mb-8 flex-grow">
               Complete End-to-End DevOps Project utilizing, Azure Repos, Pipelines, Terraform, and AKS.
             </p>
