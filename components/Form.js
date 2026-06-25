@@ -61,7 +61,7 @@ export default function Form(){
   try {
     setLoading(true);
 
-    const response = await fetch("http://localhost:3000/api/contact", {
+    const response = await fetch("https://salescrm-xi.vercel.app/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
