@@ -44,11 +44,11 @@ const InfiniteMarquee = ({
 
 export default function HiringPartners() {
   return (
-    <div className="row" style={{ padding: "2rem 0", overflow: "hidden" }}>
+    <div className="row dark:bg-white" style={{ padding: "2rem 0", overflow: "hidden" }}>
       <div className="col-lg-12 text-center">
         
         {/* Heading Section */}
-        <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-4 dark:text-black">
           <span>600+ Hiring</span> Partners Across Industries
         </h2>
         <p className="text-gray-800 mb-12">

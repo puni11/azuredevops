@@ -10,6 +10,7 @@ import {
 
 export default function USPGrid() {
   return (
+    <div className='dark:bg-white'>
     <section className="max-w-7xl mx-auto px-6 py-20 text-gray-900">
       
       {/* Section Header */}
@@ -192,5 +193,6 @@ export default function USPGrid() {
 
       </div>
     </section>
+    </div>
   );
 }

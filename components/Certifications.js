@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Certifications() {
   return (
+    <div className='dark:bg-white'>
     <section id='certifications' className="max-w-7xl mx-auto pt-4 sm:pt-20 pb-12 px-6 sm:px-0 font-sans text-gray-900">
       
       {/* Section Header */}
@@ -87,5 +88,6 @@ export default function Certifications() {
  
 
     </section>
+    </div>
   );
 }

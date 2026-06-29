@@ -15,6 +15,7 @@ import {
 
 export default function PricingAndBatch() {
   return (
+    <div className='dark:bg-white'>
     <section id='pricing' className="max-w-7xl mx-auto font-lexend py-20 px-6 sm:px-0 text-gray-900">
       
       {/* Section Header */}
@@ -156,5 +157,6 @@ export default function PricingAndBatch() {
 
       </div>
     </section>
+    </div>
   );
 }

@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} h-full antialiased scroll-smooth`}
+      className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} h-full antialiased scroll-smooth dark:bg-white`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar/>

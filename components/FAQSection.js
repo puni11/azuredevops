@@ -81,6 +81,7 @@ export default function FAQSection() {
   };
 
   return (
+    <div className='dark:bg-white'>
     <section className="w-full max-w-7xl mx-auto px-6 sm:px-0 py-16 md:py-24 bg-white">
       
       {/* Header section */}
@@ -153,5 +154,6 @@ export default function FAQSection() {
 
       </div>
     </section>
+    </div>
   );
 }

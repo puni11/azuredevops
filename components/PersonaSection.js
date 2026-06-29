@@ -64,6 +64,7 @@ export default function PersonaSection() {
   const activePersona = personas.find((p) => p.id === activeTab);
 
   return (
+    <div className="dark:bg-white">
     <section className="max-w-7xl mx-auto px-6 py-16 sm:px-6 lg:px-0 font-lexend">
       {/* Header Section */}
       <div className="mb-12">
@@ -201,5 +202,6 @@ export default function PersonaSection() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

@@ -122,7 +122,7 @@ export default function CurriculumOverview() {
   };
 
   return (
-    <section id='curriculum' className=" py-20 border-t border-slate-200 font-lexend">
+    <section id='curriculum' className=" py-20 border-t border-slate-200 font-lexend dark:bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Header Area */}
