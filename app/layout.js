@@ -33,7 +33,7 @@ export const metadata = {
   ],
   openGraph: {
     title: "Azure Administrator & DevOps Engineer Fast Track",
-    description: "Master AZ-104 and AZ-400 in just 1 month. Build real-world cloud and DevOps skills.",
+    description: "Master AZ-104 and AZ-400 in just 60 hours. Build real-world cloud and DevOps skills.",
     type: "website",
     // url: "https://yourwebsite.com/azure-devops-course", // Add your actual URL here
     // siteName: "Your Brand Name",
