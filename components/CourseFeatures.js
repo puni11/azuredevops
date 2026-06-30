@@ -7,7 +7,7 @@ export default function CourseFeatures() {
     {
       id: 1,
       title: "Beginner to Advanced",
-      copy: "Start with Azure Global Infrastructure and progress to Expert level over a 1 Month (30 Days) fast track.",
+      copy: "Start with Azure Global Infrastructure and progress to Expert level over a 60 hour fast track course.",
     },
     {
       id: 2,

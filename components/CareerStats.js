@@ -50,7 +50,7 @@ export default function CareerStats() {
           <div className="flex flex-col p-8 lg:p-10 min-h-[280px]">
             <h4 className="text-5xl lg:text-6xl font-light mb-6">60</h4>
             <p className="text-sm text-gray-700 leading-relaxed mb-8 flex-grow">
-              Total Training Hours delivered through intensive 2-hour daily sessions over the course of 1 month (30 days).
+              Total Training Hours delivered through intensive 2-hour daily sessions over the course of 60 hours.
             </p>
             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-auto">
               ONLINE / CLASSROOM MODE

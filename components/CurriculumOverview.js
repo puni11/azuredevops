@@ -132,7 +132,7 @@ export default function CurriculumOverview() {
               Deployment Work, Not Just Theory
           </h2>
           <p className="text-md text-gray-800 max-w-2xl mx-auto leading-relaxed">
-            Master the 60-hour One-Month Fast Track Training Program through hands-on labs, real deployment pipelines, and expert guidance.
+            Master the 60-hour Fast Track Training Program through hands-on labs, real deployment pipelines, and expert guidance.
           </p>
         </div>
 
