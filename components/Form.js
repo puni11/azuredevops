@@ -84,7 +84,7 @@ export default function Form(){
     if (!response.ok) {
       throw new Error(data.message || "Something went wrong");
     }
-
+    window.location.href = "/thank-you";
     setSubmitted(true);
 
     setForm({

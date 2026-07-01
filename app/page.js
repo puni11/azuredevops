@@ -45,16 +45,17 @@ export default function Home() {
    <FAQSection/>
    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-gray-200">
   <div className="grid grid-cols-2 max-w-md mx-auto">
-    <a href="https://rzp.io/rzp/sM9Ufce" target="_blank" className="h-12 bg-gray-800 text-white text-sm flex items-center justify-center gap-1">
+    <a id="enroll_btn_mobile" href="https://rzp.io/rzp/sM9Ufce" target="_blank" className="h-12 bg-gray-800 text-white text-sm flex items-center justify-center gap-1">
       <SquareArrowDownRight size={14} />Enroll now
     </a>
 
-    <a href="#formSub" className="h-12 bg-sky-600 text-white text-sm flex items-center justify-center gap-1">
+    <a id="download_broucher_btn_mobile" href="#formSub" className="h-12 bg-sky-600 text-white text-sm flex items-center justify-center gap-1">
       <DownloadIcon size={14} />Download Broucher
     </a>
   </div>
 </div>
  <a
+      id="whatsapp_chat_btn"
       href="https://wa.me/919145840133"
       target="_blank"
       rel="noopener noreferrer"

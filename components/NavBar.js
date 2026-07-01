@@ -33,7 +33,7 @@ const Navbar = () => {
 
       {/* Right: Download Brochure Button */}
       <div className="flex items-center shrink-0">
-        <motion.a
+        <motion.a id="talk_to_counselor_btn"
         href='#formSub'
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

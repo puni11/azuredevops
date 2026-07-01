@@ -63,7 +63,7 @@ export default function TrainerProfile() {
               <p className="text-sm text-blue-800 font-medium">Cloud Infrastructure Engineer | Terraform Automation Expert | CI/CD Pipeline Architect </p>
             </div>
             
-            <a 
+            <a id='linkedin_btn_trainer'
               href="https://www.linkedin.com/in/kunal-singh-35975923a/" 
               target="_blank" 
               rel="noopener noreferrer"

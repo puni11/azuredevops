@@ -162,7 +162,7 @@ export default function CurriculumOverview() {
 
         {/* CTA Section */}
         <div className="flex justify-center">
-           <motion.a
+           <motion.a id="downloadBrochure_btn"
            href='#formSub'
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

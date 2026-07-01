@@ -53,7 +53,7 @@ export default function AwardsSection() {
        
 
           <div>
-            <a href="#formSub" className="group relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3.5 text-sm md:text-base font-bold text-gray-50 rounded-md cursor-pointer bg-gradient-to-b from-gray-700 to-gray-950 shadow-lg">
+            <a id="download_broucher_btn" href="#formSub" className="group relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3.5 text-sm md:text-base font-bold text-gray-50 rounded-md cursor-pointer bg-gradient-to-b from-gray-700 to-gray-950 shadow-lg">
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/70 to-transparent group-hover:translate-x-full transition-transform duration-1000"></span>
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <DownloadIcon size={16} duration={1} color="#fff" className="group-hover:animate-bounce" />
