@@ -45,7 +45,7 @@ export default function PricingAndBatch() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Next Cohort Starts</h4>
-                  <p className="text-gray-600">August 01, 2026</p>
+                  <p className="text-gray-600">August 03, 2026</p>
                 </div>
               </div>
 
@@ -111,7 +111,7 @@ export default function PricingAndBatch() {
 
           {/* Offer Deadline */}
           <div className="bg-black/20 rounded-lg p-4 mb-6 border border-white/10 backdrop-blur-sm text-sm">
-            <span className="font-bold text-white">Early Bird Offer :</span> Ensure your enrollment before <strong>July 10, 2026</strong> to lock in this discounted price.
+            <span className="font-bold text-white">Early Bird Offer :</span> Ensure your enrollment before <strong>July 31, 2026</strong> to lock in this discounted price.
           </div>
 
           {/* EMI Option */}

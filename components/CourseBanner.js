@@ -14,7 +14,7 @@ export default function CourseBanner() {
           </div>
           <div className="flex flex-col">
             <span className="text-[13px] text-gray-50 mb-1">Batch Start Date</span>
-            <span className="text-base font-semibold text-gray-50">01 August</span>
+            <span className="text-base font-semibold text-gray-50">03 August</span>
           </div>
         </div>
 
