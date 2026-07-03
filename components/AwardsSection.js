@@ -70,9 +70,13 @@ export default function AwardsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* G2 Card */}
             <div className="bg-[#ffff] backdrop-blur-md border border-[#fff]/20 rounded-md p-6 flex flex-col items-center justify-center space-y-3">
-              <div className="w-12 h-12 bg-gray-50 text-gray-800 rounded-full flex items-center justify-center font-bold text-xl">
-                JD
-              </div>
+             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+  <img
+    src="./jd.png"
+    alt="Justdial"
+    className="w-8 h-8 object-contain"
+  />
+</div>
               <div className="flex space-x-1 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={20} fill="currentColor" />

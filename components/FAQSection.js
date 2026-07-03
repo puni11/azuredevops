@@ -14,7 +14,7 @@ export default function FAQSection() {
         },
         {
           q: 'Is the training online or in a classroom?',
-          a: 'The training mode is flexible. We offer both Online and Classroom options to suit your learning preferences.'
+          a: 'Our training is available exclusively in Online mode, providing the flexibility to learn from anywhere.'
         },
         {
           q: 'When does the next batch begin?',

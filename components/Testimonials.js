@@ -28,7 +28,7 @@ export default function Testimonials() {
       name: "Yashraj Monani",
       linkedin: "https://www.linkedin.com/in/yashrajmonani95/",
       beforeRole: "Linux SysAdmin",
-      afterRole: "Cloud Architect",
+      afterRole: "Azure Cloud Administrator",
       quote: "I knew on-prem servers inside out, but enterprise cloud was a gap. The 1:1 mentorship and practical approach to Infrastructure as Code (Terraform + Azure) changed everything. I am now leading cloud migrations.",
       image: "https://media.licdn.com/dms/image/v2/D5603AQELnTboT9SYyQ/profile-displayphoto-crop_800_800/B56ZvlXJEiIQAI-/0/1769079620482?e=1784160000&v=beta&t=C-fxKwKtDTfYLOwf9BMYvWIgkRRLM1qlP9U8d9FvOzg"
     }
