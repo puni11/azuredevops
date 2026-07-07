@@ -13,7 +13,7 @@ export default function CourseBanner() {
             <ClockIcon />
           </div>
           <div className="flex flex-col">
-            <span className="text-[13px] text-gray-50 mb-1">Batch Start Date</span>
+            <span className="text-[13px] text-gray-50 mb-1">Next Batch</span>
             <span className="text-base font-semibold text-gray-50">03 August</span>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function CourseBanner() {
           </div>
           <div className="flex flex-col">
             <span className="text-[13px] text-gray-50 mb-1">Training Mode</span>
-            <span className="text-base font-semibold text-gray-50">Online / Classroom</span>
+            <span className="text-base font-semibold text-gray-50">Online</span>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { PhoneForwardedIcon, SquareArrowOutUpRightIcon, UsersIcon, UserStarIcon } from '@animateicons/react/lucide';
 
-export const CTA = () => {
+export const CTA = ({ isHomepage = true }) => {
   return (
     <div 
       className=" w-full mx-auto font-lexend overflow-hidden mb-12 rounded-md"
@@ -31,7 +31,7 @@ export const CTA = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4 w-full mb-10 animate-roll">
             
-            <a id='enroll_btn_cta' href='https://rzp.io/rzp/sM9Ufce' target='_blank' className="group relative overflow-hidden flex items-center justify-center w-full sm:w-auto px-10 py-3.5 text-sm md:text-base font-bold text-gray-900 rounded-md cursor-pointer bg-gradient-to-b from-white to-gray-300 shadow-lg">
+            <a id='enroll_btn_cta' href={isHomepage ? 'https://rzp.io/rzp/sM9Ufce' : '#formSub'} target='_blank' className="group relative overflow-hidden flex items-center justify-center w-full sm:w-auto px-10 py-3.5 text-sm md:text-base font-bold text-gray-900 rounded-md cursor-pointer bg-gradient-to-b from-white to-gray-300 shadow-lg">
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/70 to-transparent group-hover:translate-x-full transition-transform duration-1000"></span>
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <SquareArrowOutUpRightIcon
@@ -40,20 +40,21 @@ export const CTA = () => {
                   color="#111"
                   className="group-hover:animate-bounce"
                 />
-                Enroll Now
+                {isHomepage ? "Enroll Now" : "Book FREE Demo Class"}
               </span>
             </a>
 
-            <a id='counselor_btn_cta' href='#formSub' className="group flex items-center justify-center bg-white/20 backdrop-blur-sm gap-2 w-full sm:w-auto cursor-pointer px-8 py-3.5 text-sm md:text-base font-bold text-white border border-white/20 rounded hover:bg-white/10 transition-all">
-              <PhoneForwardedIcon
-                size={16}
-                duration={1}
-                color="#ffffff"
-                className="group-hover:animate-bounce transition-all duration-300"
+            {isHomepage && (
+              <a id='counselor_btn_cta' href='#formSub' target={isHomepage ? '_self' : '_blank'} className="group flex items-center justify-center bg-white/20 backdrop-blur-sm gap-2 w-full sm:w-auto cursor-pointer px-8 py-3.5 text-sm md:text-base font-bold text-white border border-white/20 rounded hover:bg-white/10 transition-all">
+                <PhoneForwardedIcon
+                  size={16}
+                  duration={1}
+                  color="#ffffff"
+                  className="group-hover:animate-bounce transition-all duration-300"
               /> 
               Talk to a Counselor
             </a>
-            
+            )}
           </div>
 
           {/* Small detail text */}

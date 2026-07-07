@@ -10,35 +10,48 @@ import {
   ArrowRight, 
   Download, 
   PhoneCall, 
-  SquareArrowDownRight
+  SquareArrowDownRight,
+  AwardIcon,
+  Clock1,
+  FolderArchive
 } from 'lucide-react';
+import { PaperclipIcon } from '@animateicons/react/lucide';
+import CoursePricingCard from './CoursePricingCard';
 
-export default function PricingAndBatch() {
+export default function PricingAndBatch({ isHomepage=true }) {
   return (
     <div className='dark:bg-white'>
     <section id='pricing' className="max-w-7xl mx-auto font-lexend py-20 px-6 sm:px-0 text-gray-900">
       
       {/* Section Header */}
-      <div className=" mb-10">
+     {isHomepage && <div className=" mb-10">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-black">
           Enroll Today — Secure Your Seat
         </h2>
         <p className="text-md sm:text-lg text-gray-800 max-w-2xl">
           Know the details of the batch and start your journey towards Azure & DevOps mastery.
         </p>
-      </div>
+      </div>}
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch animate-roll">
         
         {/* Left Column: Batch Details Card (White Bg) */}
         <div className="bg-white rounded-sm shadow-lg border border-gray-200 p-8 md:p-10 flex flex-col justify-between">
+           {!isHomepage && <div className=" mb-10">
+        <h2 className="text-3xl md:text-3xl font-semibold tracking-tight mb-4 text-black">
+          Start Your Azure DevOps Journey Today
+        </h2>
+        <p className="text-md sm:text-md text-gray-800 max-w-2xl">
+          Join our live Azure DevOps training and master Azure Cloud, CI/CD, Docker, Terraform & Kubernetes through hands-on projects. Learn <span className="text-blue-600">Azure Devops</span> with <span className="text-blue-600">Azure Administrator (AZ-104) Foundation.</span>
+        </p>
+      </div>}
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold mb-8 border-b border-gray-100 pb-4">
+            <h3 className="text-xl sm:text-xl font-semibold mb-8 border-b border-gray-100 pb-4">
               Upcoming Batch Details
             </h3>
             
-            <div className="space-y-8">
+            {isHomepage ? <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-gray-50 text-gray-600 rounded-sm flex items-center justify-center shrink-0">
                   <Calendar size={24} />
@@ -68,7 +81,67 @@ export default function PricingAndBatch() {
                   <p className="text-gray-600">Limited for personalized attention</p>
                 </div>
               </div>
+            </div> : 
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <Calendar size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Batch Starts On</h4>
+                  <p className="text-gray-600">August 03, 2026</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <Video size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Mode of Training</h4>
+                  <p className="text-gray-600">100% Live Instructor-Led Online</p>
+                </div>
+              </div>
+                <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <Clock1 size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Duration</h4>
+                  <p className="text-gray-600">60 Hours of Live Training</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <FolderArchive size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Projects</h4>
+                  <p className="text-gray-600">8 Real-World Industry Projects</p>
+                </div>
+              </div>
+<div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <AwardIcon size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Certification</h4>
+                  <p className="text-gray-600">Microsoft Az-104 (Azure Administrator Preparation)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-sm flex items-center justify-center shrink-0">
+                  <Users size={24} />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Seats Available</h4>
+                   <p className="text-red-600 font-semibold">Only 18 Seats Left</p>
+                  <p className="text-gray-600">Limited for personalized attention</p>
+                </div>
+              </div>
             </div>
+            
+            }
           </div>
 
           <div className="mt-10 bg-gray-50 p-6 rounded-md border border-gray-100">
@@ -83,7 +156,7 @@ export default function PricingAndBatch() {
         </div>
 
         {/* Right Column: Pricing Card (Gradient Grain Bg) */}
-        <div 
+       {isHomepage ? <div 
           className="rounded-sm shadow-2xl p-8 md:p-10 flex flex-col text-white relative overflow-hidden"
           style={{
             background: `
@@ -153,7 +226,10 @@ export default function PricingAndBatch() {
            
           </div>
           
-        </div>
+        </div> : 
+        
+        <CoursePricingCard />
+        }
 
       </div>
     </section>

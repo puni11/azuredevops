@@ -1,7 +1,7 @@
 import { SquareArrowOutUpRightIcon } from "@animateicons/react/lucide";
 import { useState } from "react";
 
-export default function Form(){
+export default function Form({ isHomepage=true }) {
     
       const [form, setForm] = useState({ name: '', email: '', mobile: '', level: '', agree: false });
       const [errors, setErrors] = useState({});
@@ -138,8 +138,8 @@ export default function Form(){
               </div>
             ) : (
               <>
-                <h2 className="text-lg font-bold text-white mb-1">Reserve Your Seat</h2>
-                <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 13, marginBottom: 24 }}>Next cohort starts 01 August 2026 — spots fill fast.</p>
+                <h2 className="text-lg font-bold text-white mb-1">{isHomepage ? "Reserve Your Seat" : "Book Your FREE Career Counseling"}</h2>
+                <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 13, marginBottom: 24 }}>{isHomepage ? "Next cohort starts 01 August 2026 — spots fill fast." : "Talk to an Azure expert and choose the right learning path."}</p>
 
                 <form onSubmit={handleSubmit} noValidate>
                   <div className="grid grid-cols-1 gap-4 mb-4">
@@ -212,7 +212,7 @@ export default function Form(){
 
   <span className="relative z-10 flex items-center gap-2">
     <SquareArrowOutUpRightIcon size={16} duration={1} color="#111" />
-    {loading ? "Submitting..." : "Claim My Seat — August 2026"}
+    {loading ? "Submitting..." : isHomepage ? "Claim My Seat — August 2026" : "Get Free Counseling"}
   </span>
 </button>
                 </form>

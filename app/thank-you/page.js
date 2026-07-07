@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, Home, Mail } from 'lucide-react';
+import { DownloadIcon } from '@animateicons/react/lucide';
 
 // Custom canvas-based Confetti component to avoid external dependencies
 const CustomConfetti = ({ width, height, recycle }) => {
@@ -133,7 +134,7 @@ export default function ThankYouPage() {
         initial={{ opacity: 0, y: 20, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className="bg-white p-8 md:p-12 max-w-lg w-full text-center relative z-10 "
+        className="bg-white p-8 md:p-12 max-w-4xl w-full text-center relative z-10 "
       >
         {/* Animated Check Icon */}
         <motion.div
@@ -179,7 +180,13 @@ export default function ThankYouPage() {
             <Home className="w-4 h-4 mr-2 group-hover:-translate-y-0.5 transition-transform" />
             Back to Home
           </button>
-          
+          <button 
+            onClick={() => window.location.href = '/bro.pdf'}
+            className="group mt-6 relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3 text-sm md:text-base font-normal text-gray-50 rounded-sm cursor-pointer bg-gradient-to-b from-sky-400 to-sky-600 shadow-lg"
+          >
+            <DownloadIcon className="w-4 h-4 mr-2 group-hover:-translate-y-0.5 transition-transform" />
+            Download Brochure
+          </button>
         </motion.div>
 
         {/* Footer Note */}

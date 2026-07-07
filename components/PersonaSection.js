@@ -58,7 +58,7 @@ const personas = [
   },
 ];
 
-export default function PersonaSection() {
+export default function PersonaSection({ isHomepage = true }) {
   const [activeTab, setActiveTab] = useState(personas[0].id);
 
   const activePersona = personas.find((p) => p.id === activeTab);
@@ -76,7 +76,7 @@ export default function PersonaSection() {
           Are you ready for yours?
         </h3>
         <p className="text-gray-800 max-w-3xl text-md sm:text-lg">
-          The problem is not experience. It is that your current stack does not include the 
+           The problem is not experience. It is that your current stack does not include the 
           cloud-native layer companies now expect from modern engineers.
         </p>
       </div>

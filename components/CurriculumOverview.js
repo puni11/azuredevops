@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpenIcon, ChevronDownIcon, CircleCheckIcon, DownloadIcon } from '@animateicons/react/lucide';
 
-export default function CurriculumOverview() {
+export default function CurriculumOverview({isHomepage = true}) {
   const [openModule, setOpenModule] = useState(null);
 
   const toggleModule = (index) => {
@@ -128,11 +128,10 @@ export default function CurriculumOverview() {
         {/* Header Area */}
         <div className="text-left sm:text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight mb-6 max-w-3xl mx-auto">
-            A Curriculum Built Around Real 
-              Deployment Work, Not Just Theory
+           {isHomepage? " A Curriculum Built Around Real Deployment Work, Not Just Theory":"What You'll Learn in This Azure DevOps Course"}
           </h2>
           <p className="text-md text-gray-800 max-w-2xl mx-auto leading-relaxed">
-            Master the 60-hour Fast Track Training Program through hands-on labs, real deployment pipelines, and expert guidance.
+           {isHomepage? "Master the 60-hour Fast Track Training Program through hands-on labs, real deployment pipelines, and expert guidance.":"Learn Azure Cloud, Azure DevOps, Git, Docker, Terraform, Kubernetes, CI/CD, and real deployment workflows through live instructor-led training."}
           </p>
         </div>
 

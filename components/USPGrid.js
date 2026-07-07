@@ -8,7 +8,7 @@ import {
   CloudCheck
 } from 'lucide-react';
 
-export default function USPGrid() {
+export default function USPGrid({ isHomepage=true }) {
   return (
     <div className='dark:bg-white'>
     <section className="max-w-7xl mx-auto px-6 py-20 text-gray-900">
@@ -19,7 +19,7 @@ export default function USPGrid() {
           WHY CHOOSE US
         </span>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-black">
-          Engineered for Career Transformation.
+         { isHomepage ? "Engineered for Career Transformation." : "Why Choose GRRAS for Azure DevOps Training?" }
         </h2>
         <p className="text-lg text-gray-800 max-w-2xl ">
           We don't just teach theory; we build practitioners. Here is what makes our training program different.

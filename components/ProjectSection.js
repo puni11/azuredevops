@@ -67,7 +67,7 @@ const pipelineProjects = [
   }
 ];
 
-export default function ProjectsSection() {
+export default function ProjectsSection({isHomepage = true}) {
   return (
     <section className="relative bg-gradient-to-b from-sky-50/80 via-white to-white py-16 px-6 md:px-8 overflow-hidden">
       <style>{`
@@ -111,7 +111,7 @@ export default function ProjectsSection() {
           PROJECTS
         </span>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-black">
-          Project Completed in Microsoft Azure Devops Course
+          {isHomepage ? "Project Completed in Microsoft Azure Devops Course" : "Learn Azure DevOps by Building Real Industry Projects"}
         </h2>
         <p className="text-md text-gray-800 max-w-3xl">
           Students will complete 8 progressive projects (all pipelines they
