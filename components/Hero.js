@@ -61,7 +61,7 @@ export const HeroComponent = ({ isHomepage = true }) => {
          
            <a
   id="enroll_btn"
-  href={`${isHomepage ? 'https://rzp.io/rzp/sM9Ufce' : 'formSub'}`}
+  href={`${isHomepage ? 'https://rzp.io/rzp/sM9Ufce' : '#formSub'}`}
   target="_blank"
   className={`
     group relative overflow-hidden items-center justify-center
