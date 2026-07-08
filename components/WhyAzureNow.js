@@ -137,7 +137,7 @@ export default function WhyAzureNow({ isHomepage = true }) {
           <p className="text-slate-800 max-w-4xl">
             {isHomepage ? " Master Cloud Infrastructure with the industry's most comprehensive Azure Program.Become a production-ready engineer through hands-on Azure DevOps, AKS, Terraform, and CI/CD pipelines. Build 10+ real deployments, earn industry certifications, and prepare for top cloud interviews with expert-led guidance." : "Azure DevOps professionals are among the most in-demand IT roles today. Master Azure Cloud, CI/CD, Docker, Terraform, Kubernetes, and Azure DevOps tools through hands-on projects and become job-ready for modern cloud engineering roles."}
           </p>
-          <a id='enroll-now-high-pay' href='https://rzp.io/rzp/sM9Ufce' className="group mt-6 relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3 text-sm md:text-base font-normal text-gray-50 rounded-sm cursor-pointer bg-gradient-to-b from-sky-400 to-sky-600 shadow-lg">
+          <a id='enroll-now-high-pay' href={`${isHomepage ? 'https://rzp.io/rzp/sM9Ufce' : '#formSub'}`} className="group mt-6 relative overflow-hidden flex items-center justify-center w-fit md:w-fit px-18 py-3 text-sm md:text-base font-normal text-gray-50 rounded-sm cursor-pointer bg-gradient-to-b from-sky-400 to-sky-600 shadow-lg">
           
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/70 to-transparent group-hover:translate-x-full transition-transform duration-1000"></span>
           
